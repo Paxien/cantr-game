@@ -1,0 +1,650 @@
+@charset "UTF-8";
+
+.xdebug-error {
+  color: #000;
+}
+
+input[type="number"] {
+  height: 1em;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #fff;
+  margin: 0;
+  background-color: #004400;
+}
+
+/* BEGIN "Cantr II" on the top of every page */
+.header-title {
+  text-shadow: 3px 0px 3px #000000;
+  text-shadow: -3px 0px 3px #000000;
+  text-shadow: 0px -3px 3px #000000;
+  text-shadow: 0px 3px 3px #000000;
+  font-size: 24pt;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-subtitle {
+  font-size: 14pt;
+}
+
+.small-top {
+  font-size: 8pt;
+}
+
+.tiny-top {
+  font-size: 7pt;
+}
+
+/* END "Cantr II" on the top of every page */
+
+/* BEGIN overrides for the projects and project info pages */
+.project_worked_on {
+  color: #888;
+  margin: 0;
+}
+
+.project_not_worked_on {
+  color: #CCC;
+  margin: 0;
+}
+
+.project_self_works_on {
+  color: #FFF;
+  margin: 0;
+}
+
+.tool {
+  color: #FFF;
+}
+
+.tool_missing {
+  color: #999;
+}
+
+.project_resources_list {
+  font-size: 7pt;
+  word-spacing: 2px;
+}
+
+.raw_missing {
+  color: #999;
+}
+
+/* END */
+
+/* BEGIN manual events broadcaster */
+dl {
+  width: 100%;
+  overflow: hidden;
+}
+
+dd, dt {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+/* END manual events broadcaster */
+
+.centered {
+  text-align: center;
+  margin: 20px auto;
+}
+
+TD, .txt {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+.p-txt {
+  margin: 0;
+}
+
+ul.plain {
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.inlinePlain {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.register-small {
+  margin: 0 0 0 20px;
+  font-size: 8pt;
+}
+
+.register-nec {
+  color: #ff9700;
+}
+
+.txt-title {
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #006000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+.txt-label {
+  color: #fcff9d;
+  font-size: 8pt;
+}
+
+.inlined-icon {
+  margin-bottom: -0.25em;
+  height: 1.25em;
+  width: auto;
+}
+
+.weatherIcon {
+  height: 2em;
+  width: auto;
+}
+
+.errorBarParent {
+  text-align: center;
+}
+
+.errorbar {
+  background-color: #b33333;
+  margin: 10px auto;
+  padding: 15px;
+  display: inline-block;
+}
+
+.errorbar a {
+  color: #ee5;
+}
+
+#eventsList {
+  min-height: 30px;
+}
+
+#eventsList > div {
+  word-wrap: break-word;
+  margin: 17px 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page, .page-left {
+  margin: auto;
+  width: 700px;
+}
+
+.page {
+  text-align: justify;
+}
+
+.page-left {
+  text-align: left;
+}
+
+.page > table, .page-left > table {
+  width: 100%;
+}
+
+.action-buttons {
+  white-space: nowrap; vertical-align: top;
+  width: 0;
+}
+
+.charInfoCaptionColumn {
+  width: 20%;
+}
+
+.charInfoDataColumn {
+  width: 70%;
+}
+
+.charInfoButtonColumn {
+  width: 10%;
+}
+
+.accessListColumn {
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+}
+
+#navigationPanel input, #navigationSubpanel > a {
+  margin: 2px 0;
+  display: inline-block;
+}
+
+.locationDescription {
+  overflow: auto;
+}
+
+.locationDescription > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.locationDescriptionRaws {
+  max-width: 28%;
+}
+
+.locationDescriptionRaws li {
+  margin: 5px;
+}
+
+.locationDescriptionTerrain {
+  width: 152px;
+  float: right;
+}
+
+#mapImage {
+  max-width: 100%;
+}
+
+.rawsList {
+  text-align: left;
+}
+
+.skillsColumn {
+  display: inline-block;
+  width: 50%;
+}
+
+.resourceAllocationColumn {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.huntingAnimals, .huntingWeapon {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.domesticationAnimals, .domesticationPanel {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.peopleTableButtons {
+  white-space: nowrap;
+  width: 0;
+}
+
+.greyscaleFilter {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.topAlignedInlineForm > * {
+  vertical-align: top;
+}
+
+/* BEGIN fixed position errors list */
+#errorsList {
+  position: fixed;
+  width: 210px;
+  top: 20px;
+  right: 5px;
+  list-style-type: none;
+}
+
+.errorMessage {
+  padding: 8px;
+  margin: 7px;
+  background-color: #B33333;
+}
+
+/* END fixed position errors list */
+
+/* BEGIN used on the page "player" */
+
+.subcategory {
+  text-decoration: underline;
+  line-height: 200%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.characterOnList {
+  color: #fff;
+  cursor: pointer;
+}
+
+.characterOnList-inactive {
+  color: #777;
+}
+
+/* END used on the page "player" */
+
+/* BEGIN retrieve page */
+
+#objectsList > tbody .ui-sortable-helper {
+  cursor: move;
+}
+
+.sortable-object-placeholder {
+  height: 38px;
+  background-color: #020;
+}
+
+/* END retrieve page */
+
+/* BEGIN used on page "character settings" */
+
+div.cantrdivlist {
+  overflow: auto;
+  margin: 4px;
+}
+
+div.greenListItem {
+  background-color: #006600;
+  color: #00f300;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: none;
+  width: 145px;
+  margin: 8px;
+  padding: 5px;
+  text-align: center;
+}
+
+div.greenListItemactive {
+  cursor: pointer;
+  margin: 8px;
+  padding: 5px;
+  text-align: center;
+  background-color: #00f300;
+  color: #006600;
+  width: 145px;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+.toolbarPanel {
+  background-color: #006600;
+  color: #006600;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: 1px solid green;
+  margin: 4px;
+  padding: 4px;
+}
+
+.toolbarPanel img {
+  cursor: pointer;
+  border: 1px solid green;
+}
+
+/* END used on page "character settings" */
+
+form {
+  display: inline;
+}
+
+label {
+  cursor: inherit;
+}
+
+img {
+  border: 0;
+}
+
+/* BEGIN signs for buildings&vehicles */
+p.sign, p.sign_inline {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 8pt;
+  color: #8ab9e8;
+  border: none;
+}
+
+p.sign {
+  padding-left: 3em;
+}
+
+p.sign_inline {
+  display: inline;
+  padding-left: 1em;
+}
+
+/* END signs for buildings&vehicles */
+
+/* BEGIN label for NDS one people page */
+.people-label {
+  font-size: 8pt;
+}
+
+/* END label for NDS on people page */
+
+.charPersDesc {
+  margin-left: 10px;
+  font-size: 8pt;
+}
+
+#descArea {
+  width: 100%;
+}
+
+.underline {
+  text-decoration: underline
+}
+
+.crossbutton {
+  position: relative;
+  top: -2px;
+  width: 21px;
+  height: 21px;
+  float: right;
+}
+
+#topBar {
+  margin-bottom: 10px;
+}
+
+/*
+ * Public messages
+ */
+
+#footer_panel {
+  font-size: 8pt;
+  word-spacing: 0.25em;
+}
+
+.messageContent .scaled-image {
+  text-align: center;
+}
+
+.messageContent img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.basic_toolbar {
+  padding: 3px 5px;
+  margin: 2px;
+}
+
+/*
+ * Configurable elements of events page chardesc box
+ */
+
+#charTabs, #locationTab {
+  margin-top: 10px;
+}
+
+#charAdditionalDesc {
+  width: 100%;
+  min-height: 48px;
+}
+
+#changeNameDescConfirm, #changeLocNameConfirm {
+  float: right;
+}
+
+#charName, #locName, #charAdditionalDesc {
+  background-color: #eee;
+}
+
+.charTabPage {
+  min-height: 100px;
+}
+
+input.button_whisper {
+  color: #444;
+  background-color: #8a8;
+}
+
+.charStateBar > div {
+  margin-top: 8px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.charStateBar > .stateName {
+  width: 120px;
+}
+
+#charStateDamage, #charStateTiredness {
+  display: inline-block;
+  width: 50%;
+  height: 13px;
+  margin-right: 5px;
+}
+
+#charStateDamage {
+  background-color: #3a0000;
+}
+
+#charStateTiredness {
+  background-color: #020;
+}
+
+#charStateDamage > div {
+  background-color: #800;
+  border-width: 0px;
+}
+
+#charStateTiredness > div {
+  background-color: #080;
+  border-width: 0px;
+}
+
+#charName, #locName {
+  width: 400px;
+}
+
+#buttonToolbar {
+  margin-bottom: 0;
+  float: right;
+}
+
+#buttonToolbar img {
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.toolbarButtonsGap {
+  width: 10px;
+  display: inline-block;
+}
+
+.adjustSailingBox {
+  background-color: #052e05;
+  padding: 2px;
+}
+
+.adjustSailingBox > label {
+  min-width: 130px;
+  display: inline-block;
+}
+
+/*
+ * Call-to-action buttons
+ */
+
+.ctaContainer {
+  text-align: center;
+  margin: 50px 5px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #ff0;
+  color: black;
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 #aa0;
+  font-size: 20pt;
+  line-height: 35px;
+  font-variant: small-caps;
+  border: none;
+  cursor: pointer;
+}
+
+a.ctaLink {
+  color: #000;
+}
+
+.cta:hover {
+  background-color: #e0A24C;
+}
+
+.cta:active {
+  box-shadow: 0 3px 0 #50631C;
+  position: relative;
+  top: 4px;
+}
+
+.ctaWithArrow {
+  padding: 7px 13px 7px 30px;
+}
+
+.ctaWithArrow::after {
+  content: " »";
+}
+
+.ghostButton {
+  color: #4c4;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: 1px solid #484;
+  border-radius: 4px;
+  line-height: 22px;
+  padding: 3px 12px 3px 3px;
+}
+
+@media all and (max-width: 768px) {
+  ul.plain {
+    padding-left: 2px;
+  }
+
+  .resourceAllocationColumn {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .navbarItem {
+    width: 26%;
+  }
+}
+
+.ceRow {
+  padding: 0;
+}

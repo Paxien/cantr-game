@@ -1,0 +1,911 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-size: 11pt;
+  color: #eee;
+  background-color: #222222;
+  margin: 0;
+}
+
+/* BEGIN Calyx Mod */
+textarea, input, select {
+  color: #eee;
+  background: #111111;
+  border: 2px solid #000;
+  padding: 2px;
+}
+
+input[type="text"] {
+  color: #eee;
+  background: #111111;
+  border: 2px solid #000;
+  padding: 2px;
+}
+
+center {
+  margin-top: 10px;
+}
+
+/* BEGIN "Cantr II" on the top of every page */
+.header-title {
+  text-shadow: 3px 0px 3px #000000;
+  text-shadow: -3px 0px 3px #000000;
+  text-shadow: 0px -3px 3px #000000;
+  text-shadow: 0px 3px 3px #000000;
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-size: 36pt;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #9beb00;
+}
+
+.small-top {
+  font-size: 10pt;
+}
+
+.tiny-top {
+  font-size: 8pt;
+  margin-bottom: 10px;
+}
+
+/* END "Cantr II" on the top of every page */
+
+/* BEGIN overrides for the projects and project info pages */
+.project_worked_on {
+  color: #888;
+  margin: 0;
+}
+
+.project_not_worked_on {
+  color: #CCC;
+  margin: 0;
+}
+
+.project_self_works_on {
+  color: #FFF;
+  margin: 0;
+}
+
+.tool {
+  color: #FFF;
+}
+
+.tool_missing {
+  color: #999;
+}
+
+.project_resources_list {
+  font-size: 7pt;
+  word-spacing: 2px;
+}
+
+.raw_missing {
+  color: #999;
+}
+
+/* END */
+
+/* BEGIN manual events broadcaster */
+dl {
+  width: 100%;
+  overflow: hidden;
+}
+
+dd, dt {
+  float: left;
+  width: 50%;
+  padding: 2;
+  margin: 0;
+}
+
+/* END manual events broadcaster */
+
+.centered {
+  text-align: center;
+  margin: 20px auto;
+}
+
+TD, .txt {
+  font-size: 11pt;
+}
+
+.p-txt {
+  margin: 0;
+}
+
+ul.plain {
+  margin: 0px;
+  list-style-type: none;
+}
+
+.register-small {
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 10pt;
+}
+
+.register-nec {
+  color: #9beb00;
+}
+
+.txt-title {
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #111;
+  font-size: 14pt;
+}
+
+.txt-label {
+  color: #fcff9d;
+  font-size: 10pt;
+}
+
+.titlebar {
+  width: 700px;
+  background-color: #2e582e;
+  margin: 20px auto;
+  padding: 2px 2px;
+  text-align: center;
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-size: 20px;
+  box-shadow: 2px 2px 1px #111;
+}
+
+.inlined-icon {
+  margin-bottom: -0.25em;
+  height: 1.25em;
+  width: auto;
+}
+
+.weatherIcon {
+  height: 2em;
+  width: auto;
+}
+
+.errorBarParent {
+  text-align: center;
+}
+
+.errorbar {
+  background-color: #b33333;
+  margin: 10px auto;
+  padding: 15px;
+  display: inline-block;
+}
+
+.errorbar a {
+  color: #ee5;
+}
+
+#eventsList {
+  min-height: 30px;
+}
+
+#eventsList > div {
+  word-wrap: break-word;
+  width: 700px;
+  margin-bottom: 17px;
+}
+
+a:link, a:visited, a:active {
+  color: #9beb00;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .4s;
+}
+
+a:hover {
+  color: #ffff00;
+  text-decoration: none;
+}
+
+CENTER TABLE {
+  text-align: justify;
+}
+
+.page, .page-left {
+  margin: auto;
+  width: 700px;
+}
+
+.page {
+  text-align: justify;
+}
+
+.page-left {
+  text-align: left;
+}
+
+.page > table, .page-left > table {
+  width: 100%;
+}
+
+.action-buttons {
+  white-space: nowrap;
+  width: 0;
+}
+
+.charInfoCaptionColumn {
+  width: 20%;
+}
+
+.charInfoDataColumn {
+  width: 70%;
+}
+
+.charInfoButtonColumn {
+  width: 10%;
+}
+
+.playerLinksColumn, .playerInfoColumn {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.accessListColumn {
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+}
+
+#navigationPanel {
+  display: table;
+  width: auto;
+  text-align: center;
+}
+
+#navigationPanel input, #navigationSubpanel > a {
+  margin: 2px 0;
+  display: inline-block;
+}
+
+#navigationSubpanel {
+  padding: 3px;
+}
+
+.locationDescription {
+  overflow: auto;
+}
+
+.locationDescription > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.locationDescriptionRaws {
+  max-width: 28%;
+}
+
+.locationDescriptionRaws li {
+  margin: 5px;
+}
+
+.locationDescriptionTerrain {
+  width: 152px;
+  float: right;
+}
+
+#mapImage {
+  max-width: 100%;
+}
+
+.rawsList {
+  text-align: left;
+}
+
+.skillsColumn {
+  display: inline-block;
+  width: 50%;
+}
+
+.huntingAnimals, .huntingWeapon {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.domesticationAnimals, .domesticationPanel {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.peopleTableButtons {
+  white-space: nowrap;
+  width: 0;
+}
+
+.greyscaleFilter {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+/* BEGIN fixed position errors list */
+#errorsList {
+  position: fixed;
+  width: 210px;
+  top: 20px;
+  right: 5px;
+  list-style-type: none;
+}
+
+.errorMessage {
+  padding: 8px;
+  margin: 7px;
+  background-color: #B33333;
+}
+
+/* END fixed position errors list */
+
+/* BEGIN retrieve page */
+
+#objectsList > tbody .ui-sortable-helper {
+  cursor: move;
+}
+
+/* END retrieve page */
+
+/* BEGIN used on the page "player" */
+
+.subcategory {
+  text-decoration: underline;
+  line-height: 200%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.characterOnList {
+  color: #fff;
+  cursor: pointer;
+}
+
+.characterOnList-inactive {
+  color: #777;
+}
+
+/* END used on the page "player" */
+
+/* BEGIN used on page "character settings" */
+
+div.cantrdivlist {
+  overflow: auto;
+  margin: 4px;
+}
+
+div.greenListItem {
+
+  background-color: #0c360c;
+  color: #9beb00;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  width: 145px;
+  margin: 8px;
+  padding: 5px;
+  text-align: center;
+}
+
+div.greenListItemactive {
+  margin: 4px;
+  cursor: pointer;
+  margin: 8px;
+  padding: 5px;
+  text-align: center;
+  background-color: #3f693f;
+  color: #0c360c;
+  width: 145px;
+  font-weight: bold;
+  border: none;
+}
+
+.toolbarPanel {
+  background-color: #0c360c;
+  color: #eee;
+  font-weight: bold;
+  border-color: #111;
+  border: 1px solid #111;
+  margin: 4px;
+  padding: 4px;
+}
+
+.toolbarPanel img {
+  cursor: pointer;
+  border: 1px #0c360c;
+}
+
+/* END used on page "character settings" */
+
+/* BEGIN all buttons */
+.button_action, .button_charmenu {
+  background-color: #0c360c;
+  color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 4px solid #0c360c;
+  padding: 4px 12px 4px 12px;
+  box-shadow: 1px 1px 3px #111111;
+  /*Transition*/
+  -webkit-transition: All 0.4s ease;
+  -moz-transition: All 0.4s ease;
+  -o-transition: All 0.4s ease;
+  -ms-transition: All 0.4s ease;
+  transition: All 0.4s ease;
+}
+
+.button_charmenu_unavailable {
+  background-color: #0c360c;
+  color: #666666;
+  cursor: pointer;
+  font-weight: bold;
+  moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 4px solid #0c360c;
+  padding: 4px 12px 4px 12px;
+  box-shadow: 1px 1px 3px #111111;
+}
+
+.button_charmenuactive_unavailable {
+  background-color: #afb7a7;
+  color: #38413a;
+}
+
+a.button_charmenu, a.button_charmenuactive {
+  padding: 4px 16px 4px 16px;
+  color: #9beb00;
+  text-decoration: none;
+}
+
+.button_charmenu:hover {
+  color: #9beb00;
+}
+
+.button_charmenuactive {
+  background-color: #2e582e;
+  color: #9beb00;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 4px solid #2e582e;
+  padding: 4px 16px 4px 16px;
+  box-shadow: 1px 1px 3px #111111;
+}
+
+a.button_charmenuactive {
+  color: #9beb00;
+}
+
+/* END all buttons */
+
+form {
+  display: inline;
+}
+
+label {
+  cursor: inherit;
+}
+
+img {
+  border: 0;
+}
+
+/* BEGIN signs for buildings&vehicles */
+p.sign, p.sign_inline {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 8pt;
+  color: #8ab9e8;
+  border: none;
+}
+
+p.sign {
+  padding-left: 3em;
+}
+
+p.sign_inline {
+  display: inline;
+  padding-left: 1em;
+}
+
+/* END signs for buildings&vehicles */
+
+/* BEGIN label for NDS one people page */
+.people-label {
+  font-size: 8pt;
+}
+
+/* END label for NDS on people page */
+
+.charPersDesc {
+  color: #eee;
+  background: #111111;
+  border: 1px solid #000;
+  padding: 2px;
+  margin-left: 10px;
+  background-color: #111;
+  font-size: 8pt;
+}
+
+.underline {
+  text-decoration: underline
+}
+
+.crossbutton {
+  position: relative;
+  top: -2px;
+  width: 21px;
+  height: 21px;
+  float: right;
+}
+
+#footer_panel {
+  font-size: 8pt;
+  word-spacing: 0.25em;
+}
+
+#character_menu, #player_menu {
+  text-align: center;
+}
+
+.message-date {
+  color: yellow;
+}
+
+.message-reply-to {
+  margin-left: 7px;
+}
+
+/*
+ * Public messages
+ */
+
+.messageContent .scaled-image {
+  text-align: center;
+}
+
+.messageContent img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/*
+ * Configurable elements of events page chardesc box
+ */
+
+#charTabs, #locationTab {
+  margin-top: 10px;
+}
+
+#charAdditionalDesc {
+  width: 100%;
+  min-height: 48px;
+}
+
+#changeNameDescConfirm, #changeLocNameConfirm {
+  float: right;
+}
+
+#charName, #locName, #charAdditionalDesc {
+  background-color: #eee;
+}
+
+.charTabPage {
+  min-height: 100px;
+}
+
+input.button_whisper {
+  color: #9beb00;
+}
+
+.charStateBar > div {
+  margin-top: 8px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.charStateBar > .stateName {
+  width: 120px;
+}
+
+#charStateDamage, #charStateTiredness {
+  display: inline-block;
+  width: 350px;
+  height: 13px;
+  margin-right: 5px;
+}
+
+#charStateDamage {
+  background-color: #000000;
+}
+
+#charStateTiredness {
+  background-color: #000000;
+}
+
+#charStateDamage > div {
+  background-color: #800;
+  border-width: 0px;
+}
+
+#charStateTiredness > div {
+  background-color: #336699;
+  border-width: 0px;
+}
+
+#charName {
+  width: 400px;
+}
+
+#buttonToolbar {
+  margin-bottom: 0;
+  float: right;
+}
+
+#buttonToolbar img {
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.toolbarButtonsGap {
+  width: 10px;
+  display: inline-block;
+}
+
+/*
+ * Call-to-action buttons
+ */
+
+.ctaContainer {
+  text-align: center;
+  margin: 50px 5px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #eb3;
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 #50631C;
+  font-size: 20pt;
+  line-height: 35px;
+  font-variant: small-caps;
+}
+
+a.ctaLink {
+  color: #000;
+}
+
+.cta:hover {
+  background-color: #e0A24C;
+}
+
+.cta:active {
+  box-shadow: 0 3px 0 #50631C;
+  position: relative;
+  top: 4px;
+}
+
+.ctaWithArrow {
+  padding: 10px 20px 10px 37px;
+}
+
+.ctaWithArrow::after {
+  content: " »";
+}
+
+/*
+ * Responsive styles
+ */
+
+@media all and (max-width: 768px) {
+  .page, .page-left {
+    width: auto;
+    padding: 0 4px;
+  }
+
+  #navigationPanel {
+    padding: 0;
+  }
+
+  .titlebar {
+    width: auto;
+  }
+
+  #eventsList > div {
+    width: auto;
+  }
+
+  #charName {
+    width: 100%;
+  }
+
+  #navigationPanel input, #navigationSubpanel > a {
+    margin: 4px 2px;
+  }
+
+  .playerLinksColumn {
+    width: 100%;
+  }
+
+  .playerInfoColumn {
+    width: 100%;
+  }
+
+  .playerInfoColumn > table {
+    margin: 10px 20px;
+  }
+
+  .accessListColumn {
+    width: 100%;
+  }
+
+  .locationDescription > div {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .locationDescription {
+    text-align: center;
+  }
+
+  .locationDescriptionRaws {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  .locationDescriptionRawsInside {
+    display: inline-block;
+  }
+
+  .locationDescriptionTerrain {
+    float: none;
+  }
+
+  .skillsColumn {
+    width: 100%;
+  }
+
+  .huntingContainer div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .domesticationAnimals, .domesticationPanel {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+
+  .action-buttons {
+    white-space: normal;
+  }
+
+  .action-buttons input {
+    border: 1px solid #000;
+    padding: 0;
+  }
+
+  .action-buttons-2 {
+    width: 72px;
+  }
+
+  .action-buttons-3, .action-buttons-5, .action-buttons-6, .action-buttons-9, .action-buttons-10 { /* 3 cols */
+    width: 108px;
+  }
+
+  .action-buttons-4, .action-buttons-7, .action-buttons-8 { /* 4 cols */
+    width: 144px;
+  }
+
+  .navbarItem {
+    width: 26%;
+  }
+}
+
+/**
+ * Boostrap-compliant elements
+ */
+
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table td, .table th {
+  padding: 3px;
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid #2e582e;
+}
+
+.table-condensed {
+
+}
+
+.sortable-object-placeholder {
+  height: 38px;
+  background-color: #020;
+}
+
+@import "jquery-ui";
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: -1px;
+  padding-bottom: 2px;
+}
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+  cursor: pointer;
+}
+
+.ui-widget {
+  font-size: 1em;
+}
+
+.ui-widget select, .ui-widget button, .ui-widget input {
+  font-size: 1em;
+}
+
+.ui-widget textarea, .ui-widget text, .ui-widget input[type="text"] {
+  font-size: 1em;
+  color: #111;
+  border: 2px solid #000;
+  padding: 2px;
+}
+
+.ui-widget-content {
+  background-color: #162c17;
+  border: 2px solid #000;
+  color: #eee;
+}
+
+.ui-widget-header {
+  background-color: #0c360c;
+  border: 1px solid #222;
+  color: #eee;
+  font-weight: 700;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background-color: #2e582e;
+  border: 1px solid #0c360c;
+  color: #9beb00;
+  font-weight: 400;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #9beb00;
+  text-decoration: none;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  background-color: #2e582e;
+  border: 1px solid #0c360c;
+  color: #fff;
+  font-weight: 400;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  background-color: #2e582e;
+  border: 1px solid #0c360c;
+  color: #fff;
+  font-weight: 400;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background-color: #222222;
+  border: 1px solid #f9dd34;
+  color: #363636;
+}

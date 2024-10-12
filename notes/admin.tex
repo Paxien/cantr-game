@@ -1,0 +1,157 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[table]{xcolor}
+
+\begin{document}
+
+\title{Administrator's Guide to Cantr II}
+\author{Programming Department\\programming@cantr.net\\\\Game Administration Board\\gab@cantr.net}
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+Cantr has always done without any proper documentation, but the training of new staff members is perhaps taking more time than it normally should. This document will provide a documentation for all Cantr II staff members on policies, procudures, and tools, to be able to administer the game. A similar guide exists specifically for the programmers of the game, which is concerned with the technical details for that part, but this guide will be applicable to all staff members.
+
+\section{Staff management}
+
+\subsection{Application handling}
+
+\subsection{Staff access settings}
+
+In the players database, accessible through the main game interface, settings can be changed with regards to staff positions and their access privileges.
+
+Note that the privileges that affect access to different folders on the website (e.g. direct access to the database or the ability to upload files to the production environment) take some time to propagate through the system. Changes of these access rights are updated once a day in the server configuration.
+
+\subsection{Mailinglist administration}
+
+Mailinglists in Cantr are managed by the {\tt mailman} system. The main administrative interface can be found at:
+\begin{verbatim}
+http://www.cantr.net/cgi-bin/mailman/listinfo
+\end{verbatim}
+The lists are hidden, however, so there is not much to see there. Publicly visible information on a specific lists, for example {\tt players@cantr.net} can be found at:
+\begin{verbatim}
+http://www.cantr.net/cgi-bin/mailman/players
+\end{verbatim}
+Here you will also find a link to the ``administrative interface''. This will require a password, whereby both the main administrator password and the list-specific administrator password will work.
+
+To avoid that we lose track of changes made to the configuration, changes should be made only to the mailman-related scripts found in:
+\begin{verbatim}
+cantr_server/script_archive
+\end{verbatim}
+The script {\tt config\_mailman.sh} can be run (as superuser) to configure all mailinglists, which makes use of the files with names {\tt mailman\_*.py} in the same folder. The main configuration is found in {\tt mailman\_standard\_config.py} and the remainder are list-specific deviations from the default settings. The script also provides an example how the command prompt can be used on the server for mailinglist management, including changing the main administrator password.\footnote{See also: {\tt http://staff.imsa.edu/$\sim$ckolar/mailman/mailman-administration-v2.html}.}
+
+Creating a list requires one to log in to the server, and as root:
+\begin{verbatim}
+newlist <listname>
+\end{verbatim}
+After this, the script {\tt /home/jos/config\_mailman.sh} should be run to set all usual parameters.
+
+\subsection{Forum administration}
+
+\section{Players management: rules and policies}
+
+% see thread 5828 on forum
+
+\subsection{Capital rule}
+
+\subsection{Four day rule}
+
+\subsection{Staff or fellow player abuse}
+
+\subsection{Handling applications}
+
+% see thread 17516 on forum
+
+\subsection{Forum record keeping}
+
+\section{Players management: tools}
+
+\subsection{Players database}
+
+\begin{table}[!ht]
+\colorbox{gray!20}{
+\begin{minipage}{.6\textwidth}
+\begin{center}
+\begin{tabular}{ll}
+(P) & Pending application \\
+(A) & Approved / active player \\
+(I) & Account idled out \\
+(U) & Player unsubscribed \\
+(L) & Locked account \\
+(R) & Removed account \\
+\end{tabular}
+\caption{Overview of player status types}
+\label{tab:status}
+\end{center}
+\end{minipage}}
+\end{table}
+
+\subsection{Daily reports}
+
+\section{Multilinguism}
+
+\subsection{Translations tool}
+
+\section{Resources management}
+
+\subsection{Tools}
+
+\subsection{New lands}
+
+\subsection{Graphics}
+
+\section{Animal management}
+
+\section{Marketing}
+
+\section{Finances}
+
+\subsection{Introduction}
+
+Cantr, being a free BBRPG, have always openly displayed its finances in order for donating players to see where their money go. This document describes the process of displaying these finances on the web site. The only income the game have so far, is from donations and advertisement.
+
+\subsection{Getting the facts}
+
+Since the donations and most other transactions are handled via Jos' PayPal account, we are dependent on him to export relevant data and forward it to the person responsible for updating the figures.
+
+\subsection{Updating the values}
+For each full month, we add upp the totals for some different areas. They are:
+
+\begin{itemize}
+\item transactionfees - Mainly PayPal transaction fees
+\item serverrental - Server fees, backup costs and so on.
+\item domainname - Annual fees for keeping our domains registered.
+\item marketing - Costs involving having Cantr ads showing on other sites.
+\item advertisements - Incomes from showing banners on other sites.
+\item periodicdonations - Periodic donations via PayPal
+\item incidentaldonations - Incidental donations via PayPal
+\end{itemize}
+
+Some examples:
+
+\begin{table}[!ht]
+\colorbox{gray!20}{
+\begin{minipage}{.6\textwidth}
+\begin{center}
+\begin{tabular}{|ll}
+\{bf Post} & \{bf Explanation} & \{bf Column} \\
+Amazon Web Services & server backup & serverrental \\
+Cantr II donation NN & donation & periodicdonations or incidentaldonations \\
+Cantr II transaction NN & PayPal transaction fees & transactionfees
+BurstNet & Forum server & serverrental \\
+Google AdSense & Incomes from advertisements & advertisements \\
+Google AdWords & Cost for displaying ads & marketing \\
+\end{tabular}
+\caption{Examples of different financial posts}
+\label{tab:status}
+\end{center}
+\end{minipage}}
+\end{table}
+
+\appendix
+
+\section{Mailinglists}
+
+\end{document}

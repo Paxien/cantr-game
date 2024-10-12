@@ -1,0 +1,40 @@
+version: '2'
+services:
+        lamp:
+                build:
+                        context: .
+                        dockerfile: Dockerfile.lamp
+                image: lamp:2
+                volumes:
+                        - ..:/app/
+                        - ../docker-mysql:/var/lib/mysql
+                ports:
+                        - "8083:80"
+                        - "6666:3306"
+        sass:
+                image: larryprice/sass:latest
+                volumes:
+                        -  ..:/app/
+                entrypoint:
+                        - sass
+                        - --watch
+                        - /app/scss/:/app/www/css
+        tpl_inotify:
+                build:
+                        context: .
+                        dockerfile: Dockerfile.inotify
+                volumes:
+                        - ../tpl/:/tpl
+        react:
+                image: node:12.16.2-stretch
+                environment:
+                        - NODE_ENV=development
+                        - CHOKIDAR_USEPOLLING=true
+                        - CI=true
+                volumes:
+                        -  ..:/app/
+                ports:
+                        - "3000:3000"
+                        - "35729:35729"
+                command: ["bash", "-c", "cd /app/cantr-frontend/ && yarn start"]
+

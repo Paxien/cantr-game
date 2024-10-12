@@ -1,0 +1,8 @@
+/vendor/
+/.idea/
+docker-mysql/
+log/
+www/templatemgr.php
+www/react
+www/api/.env
+www/api/vendor

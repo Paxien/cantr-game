@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.inactive td  {
+  padding-left: 4px;
+  padding-top: 1px;
+  height: 20px;
+  border-top: solid 1px #004a00;
+}
+
+img {
+  border: none;
+}
+
+.linkannt {
+  font-size: 9px;
+  color: #afa;
+}
+
+.linkeng {
+  font-size: 10px;
+  color: #aaa;
+  font-style: italic;
+}
+
+#ajaxtable {
+  width: 100%;
+}
+
+#ajaxtable ul {
+  padding-left: 0px; /* IE FF */
+  margin-left: 20px; /* IE FF */
+}
+
+#ajaxtable li {
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  padding: 2px 0px 0px 23px;  /* IE! */
+  
+  margin-top: 2px; /* IE */
+  margin-left: -23px; /* IE */
+  border-top: 1px solid #104810;
+}
+
+#ajaxtable a {
+  color: white;
+  border-bottom: solid 1px #262;
+  height: 20px;
+}
+
+li.bmempty {
+}
+
+li.bmproceed {
+  background-image: url("../images/iconarrw.gif");
+  color: #faa;
+}
+
+li.bmdot {
+  background-image: url("../images/icondot.gif");
+}
+
+li.bmfold {
+  background-image: url("../images/iconclose.gif");
+}
+
+li.bmitem {
+  background-image: url("../images/iconprop.gif");
+}
+
+li.bmtool {
+  background-image: url("../images/iconhmmr.gif");
+}
+
+li.bmraw {
+  background-image: url("../images/iconraw.gif");
+}
+
+li.bmpart {
+  background-image: url("../images/iconpart.gif");
+}
+
+li.bmmachine {
+  background-image: url("../images/iconanvl.gif");
+}
+
+.ajaxmsg {
+  text-align: center;
+  padding-top: 100px; 
+  padding-bottom: 100px;
+}

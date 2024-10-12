@@ -1,0 +1,12 @@
+FROM alpine:3.8
+
+RUN apk --update upgrade && \
+    apk add --update --no-cache inotify-tools && \
+    apk add --no-cache bash && \
+    apk add --update --no-cache grep
+
+COPY inotify.sh /inotify.sh
+RUN chmod 750 /inotify.sh
+
+CMD ["/inotify.sh"]
+

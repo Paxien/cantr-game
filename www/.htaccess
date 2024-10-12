@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteRule ^graphics/cantr/pictures/button_newchar\.gif$ cookieless_tracker\.php
+
+# Get language abbreviation stored in the cookie
+RewriteCond %{HTTP_COOKIE} page_language=([a-z]{2,3})
+RewriteCond %{HTTP_COOKIE} !40d0228e409c8b711909680cba94881c
+RewriteRule ^$ /%1/ [L,R=302]
+
+# When there's no cookie set then guess the language
+RewriteCond %{HTTP:Accept-Language} ^(en|nl|fr|de|es|ru|se|eo|pl|la|ar|tu|pt|lt|zh|fi|jbo|it|bg|jp) [NC]
+RewriteCond %{HTTP_COOKIE} !40d0228e409c8b711909680cba94881c
+RewriteRule ^$ /%1/ [L,R=302]
+
+# When logged in then remove the language subdirectory part
+RewriteCond %{HTTP_COOKIE} 40d0228e409c8b711909680cba94881c
+RewriteRule ^(en|nl|fr|de|es|ru|se|eo|pl|la|ar|tu|pt|lt|zh|fi|jbo|it|bg|jp)/(.*)$ /$2 [L,R=302]
+
+# If the address is e.g. "/en/index.php" or "/en/index.php?page=intro" then hide "index.php" part (redirect to "/en/")
+RewriteCond %{QUERY_STRING} ^(page=intro)?$
+RewriteRule ^([a-z]{2,3})/index\.php$ /$1/? [L,R=302]
+
+# Append language subdirectory into the Query String
+RewriteRule ^([a-z]{2,3})/(index.php)?$ index\.php?l=$1 [QSA]

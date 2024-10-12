@@ -1,0 +1,24 @@
+{
+  "env": "main|intro|test",
+  "subtitle": "",
+  "devserverMode": "false",
+  "domainUrl": "https://cantr.net",
+  "database": {
+    "host": "",
+    "user": "",
+    "password": "",
+    "name": "",
+    "errorLogFile": "log/debug.clog"
+  },
+  "errorLogFile": "log/error.log",
+  "testerScriptsLogFile": "log/util.tester.log",
+  "redirectWhenNoCharacter": {
+    "url": ""
+  },
+  "integratedEnvironments": {
+    "intro-or-main, add one if you need two servers to talk to each other": {
+      "url": "",
+      "databaseName": ""
+    }
+  }
+}

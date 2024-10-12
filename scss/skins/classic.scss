@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import "base";
+
+.titlebar {
+  width: 700px;
+  background-color: #008800;
+  margin: 20px auto;
+  padding: 2px 5px;
+  text-align: center;
+  line-height: 24px;
+}
+
+a {
+  color: #ff9700;
+  text-decoration: none;
+}
+
+CENTER TABLE {
+  text-align: justify;
+}
+
+#navigationPanel {
+  display: table;
+  width: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* BEGIN all buttons */
+.button_action, .button_charmenu, .button_charmenuactive, .button_charmenu_unavailable, .button_charmenuactive_unavailable {
+  background-color: #060;
+  color: #00f300;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 2px;
+  line-height: 22px;
+  padding: 0 4px;
+}
+
+.button_charmenu_unavailable {
+  background-color: #252;
+  color: #595;
+}
+
+a.button_charmenu, a.button_charmenuactive {
+  padding: 3px 9px;
+  text-decoration: none;
+}
+
+a.button_charmenu {
+  color: #00f300;
+}
+
+.button_charmenuactive {
+  background-color: #00f300;
+  color: #006600;
+  font-style: italic;
+}
+
+/* END all buttons */
+
+#character_menu, #player_menu {
+  text-align: center;
+}
+
+.message-date {
+  color: yellow;
+}
+
+.message-reply-to {
+  margin-left: 7px;
+}
+
+/*
+ * Responsive styles
+ */
+
+@media all and (max-width: 768px) {
+  .page, .page-left {
+    width: auto;
+    padding: 0 4px;
+  }
+
+  #navigationPanel {
+    display: block;
+    min-width: unset;
+  }
+
+  .titlebar {
+    width: auto;
+  }
+
+  #eventsList > div {
+    width: auto;
+  }
+
+  #charName, #locName {
+    width: 100%;
+  }
+
+  #navigationPanel input, #navigationSubpanel > a {
+    margin: 6px 2px;
+  }
+
+  .playerLinksColumn {
+    width: 100%;
+  }
+
+  .playerInfoColumn {
+    width: 100%;
+  }
+
+  .playerInfoColumn > table {
+    margin: 10px 20px;
+  }
+
+  .accessListColumn {
+    width: 100%;
+  }
+
+  .locationDescription > div {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .locationDescription {
+    text-align: center;
+  }
+
+  .locationDescriptionRaws {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  .locationDescriptionRawsInside {
+    display: inline-block;
+  }
+
+  .locationDescriptionTerrain {
+    float: none;
+  }
+
+  .skillsColumn {
+    width: 100%;
+  }
+
+  .huntingContainer div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .domesticationAnimals, .domesticationPanel {
+    width: 100%;
+  }
+}
+
+@import "object-actions";
+
+@import "like-bootstrap";
+
+@import "jquery-ui";
