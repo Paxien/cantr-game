@@ -1,6 +1,0 @@
-IndexIgnore */*
-
-<Files .htaccess>
-order deny,allow
-deny from all
-</Files>

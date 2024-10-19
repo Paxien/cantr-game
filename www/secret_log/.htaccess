@@ -1,6 +1,0 @@
-AuthUserFile /home/http/.htpasswd
-AuthGroupFile /home/http/.htgroups
-AuthName "Cantr.net mySQL Access"
-AuthType Basic
-
-require group mysql
